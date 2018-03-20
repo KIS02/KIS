@@ -1,3 +1,5 @@
+##+ 주로 코딩 연습 한 것을 올립니다.
+usually i upload my coding practice
 ## Ignore ##
 
 파일 설명 -
