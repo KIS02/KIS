@@ -1,0 +1,25 @@
+using System;
+
+public class Kata
+{
+	public static string InitializeNames(string name)
+	{
+		char[] delimiter = { ' ' };
+		string[] namelist = name.Split(delimiter, StringSplitOptions.RemoveEmptyEntries);
+
+    name = null;
+		for( int i = 0; i <= namelist.Length - 1; i++ ){
+			if ( i == 0 ) {
+				name += namelist[i];
+
+			} else if ( i == namelist.Length -1 ) {
+				name += (' ' + namelist[i]);
+			} else {
+				name +=  ' ' + namelist[i].Substring(0,1) + ".";
+			}
+
+		}
+
+		return name;
+	}
+}
